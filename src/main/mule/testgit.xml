@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="775e757d-8a97-480d-95fe-4f26f59ee544" >
+		<http:listener-connection host="0.0.0.0" port="8083" />
+	</http:listener-config>
+	<flow name="testgitFlow" doc:id="8a0f831f-dc90-44dd-b74d-d90f693ea42a" >
+		<http:listener doc:name="Listener" doc:id="56d3a05c-6b58-406f-84f3-cc4360c15cb4" config-ref="HTTP_Listener_config" path="/TESTGIT"/>
+		<logger level="INFO" doc:name="Logger" doc:id="09659725-43d9-4c9b-ade1-1eab3ea4e8de" />
+	</flow>
+</mule>
