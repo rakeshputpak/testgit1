@@ -33,7 +33,7 @@
 				<configuration>
 				  <cloudHubDeployment>
                     <username>${username}</username>
-                     <p>${password}</p>         
+                     <password>${password}</password>         
                      <workers>${workers}</workers>
                      <workerType>${worker.type}</workerType>
                      <environment>${environment}</environment>
