@@ -31,6 +31,16 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				  <cloudHubDeployment>
+                    <username>${username}</username>
+                     <p>${password}</p>         
+                     <workers>${workers}</workers>
+                     <workerType>${worker.type}</workerType>
+                     <environment>${environment}</environment>
+                     <muleVersion>${mule.version}</muleVersion>
+                     <applicationName>${application.name}</applicationName>
+                     <objectStoreV2>true</objectStoreV2>
+                  </cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
