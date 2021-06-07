@@ -32,14 +32,16 @@
 				<extensions>true</extensions>
 				<configuration>
 				  <cloudHubDeployment>
-                    <username>${username}</username>
-                     <password>${password}</password>         
-                     <workers>${workers}</workers>
-                     <workerType>${worker.type}</workerType>
-                     <environment>${environment}</environment>
-                     <muleVersion>${mule.version}</muleVersion>
-                     <applicationName>${application.name}</applicationName>
-                     <objectStoreV2>true</objectStoreV2>
+				    <url>https://anypoint.mulesoft.com</url>
+                    <username>${anypoint.username}</username>
+                    <password>${anypoint.password}</password>         
+                    <workers>${workers}</workers>
+                    <workerType>${vCore}</workerType>
+                    <environment>${env}</environment>
+                    <muleVersion>${mule.version}</muleVersion>
+                    <applicationName>${appname}</applicationName>
+                    <BussinessGroup>${business}</BussinessGroup>
+                    <objectStoreV2>true</objectStoreV2>
                   </cloudHubDeployment>
 				</configuration>
 			</plugin>
