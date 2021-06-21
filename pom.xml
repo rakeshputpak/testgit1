@@ -60,8 +60,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                
-                <munitTest>testgit-suite.xml</munitTest>
+                 <munitTest>testgit-suite.xml</munitTest>
                     <coverage>
                         <runCoverage>true</runCoverage>
                         <formats>
