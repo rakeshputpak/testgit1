@@ -61,7 +61,7 @@
 				</executions>
 				<configuration>
 					<munitTest>testgit-suite.xml</munitTest>
-					<runtimeVersion>4.3.0-PATCH1</runtimeVersion>
+					<runtimeVersion>4.3.0</runtimeVersion>
 					<coverage>
 						<runCoverage>true</runCoverage>
 						<formats>
